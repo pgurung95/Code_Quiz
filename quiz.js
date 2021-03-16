@@ -45,7 +45,7 @@ var questions = [
 
 
 var CORRECT_BONUS = 10;
-var MAX_QUESTIONS = 3;
+var MAX_QUESTIONS = 4;
 var MAX_TIME = 60;
 
 var timeLeft = 0;
@@ -113,7 +113,7 @@ choices.forEach((choice) => {
     var toApply = "incorrect";
     if (selectedAnswer == presentQuestion.answer) {
       toApply = "correct";
-      score = score + CORRECT_BONUS;
+      score = score;
     } else {
       setTime(timeLeft - 5);
     }
