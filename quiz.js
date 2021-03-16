@@ -113,7 +113,6 @@ choices.forEach((choice) => {
     var toApply = "incorrect";
     if (selectedAnswer == presentQuestion.answer) {
       toApply = "correct";
-      score = score;
     } else {
       setTime(timeLeft - 5);
     }
